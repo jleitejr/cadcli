@@ -25,7 +25,7 @@ public class ClientesControllerTest
         var okResult = _controller.GetAll() as OkObjectResult;
         // Assert
         var items = Assert.IsType<List<Cliente>>(okResult.Value);
-        Assert.Equal(4, items.Count);
+        Assert.Equal(5, items.Count);
     }
 
     [Fact]
